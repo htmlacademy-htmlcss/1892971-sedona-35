@@ -12,17 +12,51 @@
   src: url("../fonts/ptsans-700.woff2") format("woff2");
   font-display: swap;
 }
+html {
+  height: 100%;
+}
 body{
+  margin: 0 auto;
+  display:flex;
+  flex-direction: column;
+  min-height: 100%;
   font-family: "PT Sans", sans-serif;
   font-size: 18px;
   line-height: 24px;
   color: black;
-  background-color: white;
+  background-color:#F2F2F2;
 }
 .page-header{
+  display: flex;
+  margin: 0 auto;
   color: black;
-  background-color: white;
 }
+.main-logo{
+margin-left: 70px;
+
+}
+.navigation{
+display: flex;
+margin: 0;
+padding: 0;
+flex-direction: row;
+justify-content: space-between;
+align-items: flex-start;
+gap: 30px;
+align-items: center;
+grid-gap:285px;
+
+}
+.navigation-list{
+  display: flex ;
+  justify-content: space-between;
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
+  grid-gap:32px;
+
+}
+
 .navigation-link{
   color: black;
   background-color: white;
@@ -31,16 +65,44 @@ body{
   text-decoration: none;
   text-align: center;
   text-transform: uppercase;
+  margin: 0;
+  padding: 0;
+}
+.navigation-item button {
+  background: #756157;
+  border-radius: 4px;
+  width: 160px;
+  height: 36px;
+  font-family: 'PT Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+}
+.navigation-user{
+  display:flex;
+  margin: 0 auto;
+  justify-content: space-between;
+  max-width: 200px;
+  margin-left: auto;
+  list-style-type: none;
+}
+.main-container {
+  flex-grow: 1;
+}
+.page-container {
+  width: 1200px;
+  margin: 0 auto;
+  background-color: white;
 }
 .welcome{
+  display: block;
+  margin: 0 auto;
   color: #ffffff;
   background-color: #000000;
   background-image: url("../images/index-background.jpg");
   background-size: 100% auto;
   background-repeat: no-repeat;
-}
-.benefits{
-  text-align: center;
 }
 .welcome-title{
 font-style: normal;
@@ -70,9 +132,16 @@ text-transform: uppercase;
   display: flex;
   flex-direction: row;
   align-items: flex-start;
+  margin: 0 auto;
   padding: 0px;
-  width: 1200px;
-  height: 384px;
+  text-align: center;
+}
+.benefits-item{
+width: 400px;
+height: 384px;
+box-sizing: border-box;
+padding: 104px;
+
 }
 .card{
   display: flex;
@@ -93,31 +162,68 @@ text-transform: uppercase;
   font-size: 24px;
   line-height: 28px;
 }
-.filters{
+.advantages-list {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  color: #ffffff;
+  display: flex;
+  justify-content: space-between;
+}
+.advantages-item {
+  width: 400px;
+height: 384px;
+box-sizing: border-box;
+padding: 80px;
+}
+.filters {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  padding: 35px 70px;
   color: #ffffff;
   background-color: #000000;
   background-image: url("../images/index-background.jpg");
   background-size: 100% auto;
   background-repeat: no-repeat;
 }
-.product-list{
+.hotel{
+  font-family: 'PT Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 60px;
+  line-height: 78px;
+  margin: 0;
+}
+.select-control {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+}
+.pagination {
+  display: flex;
+  flex-direction: row;
+}
+.pagination-item {
+  flex: 1 1 auto;
+  gap: 8px;
+}
+.product-list {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
   align-items: flex-start;
-  padding: 0px;
+  padding: 20px;
   gap: 20px;
 }
-.subscription{
+.subscription {
   display: flex;
   flex-direction: column;
   align-items: center;
   padding: 0px;
-  gap: 54px;
-
   width: 684px;
-  height: 214.86px;
+  margin: 0 auto;
 }
-.footer-social-list{
+.footer-social-list {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -126,14 +232,42 @@ text-transform: uppercase;
   width: 142px;
   height: 40px;
 }
-.contacts-address{
-  width: 720px;
-  height: 50px;
+.contacts-address {
+  font-family: 'PT Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 40px;
 }
-.about-text{
+.about-text {
   width: 115px;
   height: 33px;
 }
-.visually-hidden{
-visibility: hidden;
+.visually-hidden {
+  visibility: hidden;
+}
+.page-footer {
+  width: 1200px;
+  height: 120px;
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  width: 940px;
+  margin: 0 auto;
+  margin-left: 82px;
+  }
+.interest {
+  text-align: center;
+  padding: 95px;
+}
+.wrap-filters {
+  display: flex;
+  flex-direction: row;
+}
+.wrap-infa {
+  display: flex;
+  justify-content: space-between;
+}
+.prise-wrapper {
+  display: flex;
 }
