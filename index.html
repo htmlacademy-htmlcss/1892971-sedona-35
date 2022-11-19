@@ -44,8 +44,10 @@
             </a>
           </li>
           <li class="navigation-item">
-            <a class="navigation-link favs" href="#">
-              <span class="visually-hidden">Избранное.</span> <svg width="19" height="17" viewBox="0 0 19 17" fill="none"
+            <a class="navigation-link favs " href="#">
+              <span class="visually-hidden">Избранное.</span>
+              <span class="number-favs">12</span>
+              <svg width="19" height="17" viewBox="0 0 19 17" fill="none"
                 xmlns="http://www.w3.org/2000/svg">
                 <path
                   d="M9.577 17c-.301 0-.602-.1-.803-.4-5.415-6.1-6.719-7.5-7.02-7.9C1.052 7.8.651 6.6.651 5.4c0-3 2.407-5.4 5.516-5.4 1.304 0 2.507.5 3.51 1.3C10.68.5 11.983 0 13.187 0c3.008 0 5.516 2.4 5.516 5.4 0 1.3-.502 2.5-1.304 3.4l-7.02 7.9c-.2.2-.401.3-.802.3ZM3.56 7.5c.3.4 3.51 4 6.117 6.9l6.218-7c.5-.5.701-1.2.701-2 0-1.8-1.504-3.3-3.309-3.3-1.003 0-2.006.5-2.708 1.3-.3.3-.601.4-.902.4-.3 0-.602-.2-.802-.4-.702-.8-1.705-1.3-2.708-1.3-1.805 0-3.31 1.5-3.31 3.3-.1.9.301 1.6.703 2.1-.1 0-.1 0 0 0Z"
@@ -62,21 +64,42 @@
     <main class="main-container main-index">
       <div class="page-container">
         <h1 class="index-title"><span class="visually-hidden"> Добро пожаловать в Седону</span></h1>
-        <img class="sedona-img" src="images/gorgeous.jpg" width="1200" height="485"
-          alt="Welcome to the gorgeous Sedona.">
+        <div class="sedona-welcome">
+          <img class="sedona-img" src="images/welcome.svg" width="458" height="352" alt="Welcome to the gorgeous Sedona.">
+        </div>
         <section class="advantages">
           <div class="reasons-container">
             <h2 class="advantages-title">Седона — небольшой городок в Аризоне,
               заслуживающий большего!</h2>
-            <p class="advantages-reasons">Рассмотрим 5 причин, по которым Седона круче, чем Гранд-Каньон!</p>
+            <p class="advantages-reasons">Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон!</p>
           </div>
           <div class="advantages-box">
             <div class="advantages-wrapper">
               <h3 class="reasons-title">Настоящий городок</h3>
-              <p class="reasons-number">— №1 —</p>
               <p class="reasons-subscription">Седона — не аттракцион для туристов, там течёт своя жизнь</p>
             </div>
             <img src="images/town.jpg" width="800" height="384" alt="Городок Седона.">
+          </div><ul class="advantages-list">
+            <li class="advantages-item">
+              <h3 class="reasons-title reasons-title-color">Небольшая<br> площадь</h3>
+              <p class="reasons-subscription">Все достопримечательности находятся очень близко</p>
+            </li>
+            <li class="advantages-item">
+              <h3 class="reasons-title reasons-title-color">Красивая<br> дорога</h3>
+              <p class="reasons-subscription">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
+            </li>
+            <li class="advantages-item">
+              <h3 class="reasons-title reasons-title-color">Мало<br> туристов</h3>
+              <p class="reasons-subscription">Большинство едет в Гранд Каньон и толпится там</p>
+            </li>
+          </ul>
+
+          <div class="advantages-box">
+            <img src="images/bridge.jpg" width="800" height="384" alt="Мост дьявола.">
+            <div class="advantages-wrapper">
+              <h3 class="reasons-title">Там есть<br> мост дьявола</h3>
+              <p class="reasons-subscription">Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
+            </div>
           </div>
           <ul class="town-qualities-list">
             <li class="town-qualities-item">
@@ -95,37 +118,10 @@
                 но и настоящего местного<br> производства!</p>
             </li>
           </ul>
-          <div class="advantages-box">
-            <img src="images/bridge.jpg" width="800" height="384" alt="Мост дьявола.">
-            <div class="advantages-wrapper">
-              <h3 class="reasons-title">Там есть<br> мост дьявола</h3>
-              <p class="reasons-number">— №2 —</p>
-              <p class="reasons-subscription">Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
-            </div>
-          </div>
-          <ul class="advantages-list">
-            <li class="advantages-item">
-              <h3 class="reasons-title">Небольшая<br> площадь</h3>
-              <p class="reasons-number">— №3 —</p>
-              <p class="reasons-subscription">Все достопримечательности находятся очень близко</p>
-            </li>
-            <li class="advantages-item">
-              <h3 class="reasons-title">Красивая<br> дорога</h3>
-              <p class="reasons-number">— №4 —</p>
-              <p class="reasons-subscription">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
-            </li>
-            <li class="advantages-item">
-              <h3 class="reasons-title">Мало<br> туристов</h3>
-              <p class="reasons-number">— №5 —</p>
-              <p class="reasons-subscription">Большинство едет в Гранд Каньон и толпится там</p>
-            </li>
-          </ul>
         </section>
         <section class="booking">
           <h2 class="booking-title">Заинтересовались?</h2>
-          <p class="booking-subscription">Укажите предполагаемые даты поездки,<br>и мы покажем вам лучшие предложения гостиниц в Седоне
-
-          </p>
+          <p class="booking-subscription">Укажите предполагаемые даты поездки,<br>и мы покажем вам лучшие предложения гостиниц в Седоне</p>
           <button class="button booking-button basic-button" type="button">Поиск гостиницы в Седоне</button>
         </section>
       </div>
